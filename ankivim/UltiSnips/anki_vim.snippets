@@ -1,18 +1,17 @@
 ###########################################################################                         
 # Snippets to create anki cards using vim
+# These snippets now have higher priority than 0 to overwrite already defined snippets for entering math mode
 ###########################################################################
 extends tex
 
-priority -50
+priority 10
 
-snippet la "Block [latex]"
-[latex]
-${1}
-[/latex]
+snippet mk "inline mathjax"
+\(${1}\)
 endsnippet
 
-snippet lai "Inline [latex]"
-[latex]${1}[/latex]
+snippet mm "block mathjax" wA
+\[${1}\]
 endsnippet
 
 snippet img "image-path"
@@ -24,11 +23,3 @@ snippet "c([c\d]){1}" "{{c1::Cloze}}" r
 {{c`!p snip.rv = match.group(1) if match.group(1) != 'c' else "1"`::${1:Cloze}}}
 endsnippet
 
-snippet $$ "[$]MATH[/S]" iA
-[$]${1:MATH}[/$]
-endsnippet
-
-
-snippet lfrac "\frac{}{}" 
-\frac{${1}}{${2}}${0} 
-endsnippet

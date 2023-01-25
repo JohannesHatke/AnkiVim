@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: AnkiVim
+Version: 1.5.3
+Summary: Use vim to rapidly write textfiles immediately importable into anki(1).
+Home-page: https://github.com/MFreidank/VimForAnki
+Download-URL: https://github.com/MFreidank/VimForAnki/tarball/1.5.3
+Author: Moritz Freidank
+Author-email: freidankm@yahoo.de
+Maintainer: Moritz Freidank
+Maintainer-email: freidankm@yahoo.de
+License: MIT
+License-File: LICENSE
+
+## This Fork
+Just integrating this into my existing tex snippets. Removing some snippets and changing the priority and triggers to overwrite old ones previously defined for other tex docs.
+
+## installation
+Clone this repo and run the following in Ankvim directory
+```bash
+pip install -e
+```
