@@ -4,5 +4,5 @@ Just integrating this into my existing tex snippets. Removing some snippets and 
 ## installation
 Clone this repo and run the following in Ankvim directory
 ```bash
-pip install -e
+pip install -e .
 ```
